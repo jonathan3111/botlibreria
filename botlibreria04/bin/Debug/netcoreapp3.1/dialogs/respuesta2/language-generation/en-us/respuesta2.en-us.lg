@@ -1,0 +1,9 @@
+[import](common.lg)
+
+# SendActivity_5N2GGo()
+[Activity
+    Text = ${SendActivity_5N2GGo_text()}
+]
+
+# SendActivity_5N2GGo_text()
+- Si tenemos el producto que busca

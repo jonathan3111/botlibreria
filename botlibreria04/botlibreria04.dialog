@@ -1,0 +1,198 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "name": "botlibreria04",
+    "description": "",
+    "id": "A79tBe"
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnConversationUpdateActivity",
+      "$designer": {
+        "id": "376720",
+        "comment": "This trigger runs when a conversation update activity is sent to the bot. This indicates a user or bot being added or removed from a conversation."
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.Foreach",
+          "$designer": {
+            "id": "518944",
+            "name": "Loop: for each item",
+            "comment": "For each member added to the conversation."
+          },
+          "itemsProperty": "turn.Activity.membersAdded",
+          "actions": [
+            {
+              "$kind": "Microsoft.IfCondition",
+              "$designer": {
+                "id": "641773",
+                "name": "Branch: if/else",
+                "comment": "Checks that that member added ID does not match the bot ID. This prevents the greeting message from being sent when the bot is added to a conversation."
+              },
+              "condition": "=string(dialog.foreach.value.id) != string(turn.Activity.Recipient.id)",
+              "actions": [
+                {
+                  "$kind": "Microsoft.SendActivity",
+                  "$designer": {
+                    "id": "859266",
+                    "name": "Send a response"
+                  },
+                  "activity": "${SendActivity_Greeting()}"
+                },
+                {
+                  "$kind": "Microsoft.SendActivity",
+                  "$designer": {
+                    "id": "UuPCYV"
+                  },
+                  "activity": "${SendActivity_UuPCYV()}"
+                },
+                {
+                  "$kind": "Microsoft.SendActivity",
+                  "$designer": {
+                    "id": "ORhR0k"
+                  },
+                  "activity": "${SendActivity_ORhR0k()}"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnUnknownIntent",
+      "$designer": {
+        "id": "AySp72",
+        "name": "Unknown intent"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "CHA4Vf"
+          },
+          "activity": "${SendActivity_CHA4Vf()}"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "zDZ7V2",
+        "name": "Cuaderno"
+      },
+      "intent": "Cuaderno",
+      "actions": [
+        {
+          "$kind": "Microsoft.BeginDialog",
+          "$designer": {
+            "id": "sHaUEQ"
+          },
+          "activityProcessed": true,
+          "dialog": "respuestas"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "mSFTK5",
+        "name": "Goma"
+      },
+      "intent": "Goma",
+      "actions": [
+        {
+          "$kind": "Microsoft.BeginDialog",
+          "$designer": {
+            "id": "OkHo4L"
+          },
+          "activityProcessed": true,
+          "dialog": "respuesta2"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "aKIHNn",
+        "name": "Colores"
+      },
+      "intent": "Colores",
+      "actions": [
+        {
+          "$kind": "Microsoft.BeginDialog",
+          "$designer": {
+            "id": "83wLIq"
+          },
+          "activityProcessed": true,
+          "dialog": "respuesta3"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "dD9flR",
+        "name": "Plumones"
+      },
+      "intent": "Plumones",
+      "actions": [
+        {
+          "$kind": "Microsoft.BeginDialog",
+          "$designer": {
+            "id": "orSimo"
+          },
+          "activityProcessed": true,
+          "dialog": "respuesta4"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "xgF5tj",
+        "name": "Regla"
+      },
+      "intent": "Regla",
+      "actions": [
+        {
+          "$kind": "Microsoft.BeginDialog",
+          "$designer": {
+            "id": "xluOGI"
+          },
+          "activityProcessed": true,
+          "dialog": "respuesta5"
+        }
+      ]
+    }
+  ],
+  "generator": "botlibreria04.lg",
+  "id": "botlibreria04",
+  "recognizer": {
+    "$kind": "Microsoft.RegexRecognizer",
+    "intents": [
+      {
+        "intent": "Cuaderno",
+        "pattern": "cuaderno"
+      },
+      {
+        "intent": "Goma",
+        "pattern": "goma"
+      },
+      {
+        "intent": "Colores",
+        "pattern": "colores"
+      },
+      {
+        "intent": "Plumones",
+        "pattern": "plumones"
+      },
+      {
+        "intent": "Regla",
+        "pattern": "regla"
+      }
+    ]
+  }
+}

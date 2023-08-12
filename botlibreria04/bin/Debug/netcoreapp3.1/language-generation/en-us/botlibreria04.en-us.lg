@@ -1,0 +1,30 @@
+[import](common.lg)
+
+# SendActivity_Greeting()
+[Activity
+    Text = ${SendActivity_Greeting_text()}
+]
+
+# SendActivity_Greeting_text()
+- Hola
+# SendActivity_CHA4Vf()
+[Activity
+    Text = ${SendActivity_CHA4Vf_text()}
+]
+
+# SendActivity_CHA4Vf_text()
+- No tenemos aun ese producto
+# SendActivity_UuPCYV()
+[Activity
+    Text = ${SendActivity_UuPCYV_text()}
+]
+
+# SendActivity_UuPCYV_text()
+- Bienvenido a la Libreria Jhardsystex
+# SendActivity_ORhR0k()
+[Activity
+    Text = ${SendActivity_ORhR0k_text()}
+]
+
+# SendActivity_ORhR0k_text()
+- ¿Que es lo que esta buscando?

@@ -1,0 +1,9 @@
+[import](common.lg)
+
+# SendActivity_NMkinh()
+[Activity
+    Text = ${SendActivity_NMkinh_text()}
+]
+
+# SendActivity_NMkinh_text()
+- Si tenemos el producto que busca

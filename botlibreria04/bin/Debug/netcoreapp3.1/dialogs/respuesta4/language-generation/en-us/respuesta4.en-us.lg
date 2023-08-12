@@ -1,0 +1,9 @@
+[import](common.lg)
+
+# SendActivity_q6GW72()
+[Activity
+    Text = ${SendActivity_q6GW72_text()}
+]
+
+# SendActivity_q6GW72_text()
+- Si tenemos el producto que busca

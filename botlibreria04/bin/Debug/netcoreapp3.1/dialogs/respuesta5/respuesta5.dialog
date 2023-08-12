@@ -1,0 +1,32 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "a5UNXj",
+    "name": "respuesta5",
+    "comment": ""
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "name": "BeginDialog",
+        "description": "",
+        "id": "JGx17N"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "c2KT6w"
+          },
+          "activity": "${SendActivity_c2KT6w()}"
+        }
+      ]
+    }
+  ],
+  "generator": "respuesta5.lg",
+  "recognizer": "respuesta5.lu.qna",
+  "id": "respuesta5"
+}

@@ -1,0 +1,9 @@
+[import](common.lg)
+
+# SendActivity_JRXdvD()
+[Activity
+    Text = ${SendActivity_JRXdvD_text()}
+]
+
+# SendActivity_JRXdvD_text()
+- Si tenemos el producto que busca
