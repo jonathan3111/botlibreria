@@ -13,7 +13,7 @@
 ]
 
 # SendActivity_CHA4Vf_text()
-- No tenemos aun ese producto, disculpe
+- Disculpe no entendi su mensaje , ¿Puede volver a repetirlo?
 # SendActivity_UuPCYV()
 [Activity
     Text = ${SendActivity_UuPCYV_text()}
@@ -24,6 +24,7 @@
 # SendActivity_ORhR0k()
 [Activity
     Text = ${SendActivity_ORhR0k_text()}
+    SuggestedActions = goma | cuaderno | colores | plumones | regla
 ]
 
 # SendActivity_ORhR0k_text()

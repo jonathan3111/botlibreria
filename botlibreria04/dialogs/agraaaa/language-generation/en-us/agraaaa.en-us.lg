@@ -1,0 +1,9 @@
+[import](common.lg)
+
+# SendActivity_rgjvzG()
+[Activity
+    Text = ${SendActivity_rgjvzG_text()}
+]
+
+# SendActivity_rgjvzG_text()
+- Gracias vuelva pronto (^◡^)

@@ -1,0 +1,9 @@
+[import](common.lg)
+
+# SendActivity_SDbAYd()
+[Activity
+    Text = ${SendActivity_SDbAYd_text()}
+]
+
+# SendActivity_SDbAYd_text()
+- ¿Que otra cosa desea?

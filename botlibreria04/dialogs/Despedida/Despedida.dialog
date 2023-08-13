@@ -1,0 +1,50 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "LyxjJx",
+    "name": "Despedida",
+    "comment": ""
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "name": "desea algo mas",
+        "description": "",
+        "id": "9SV2M4"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "sRKMUq"
+          },
+          "activity": "${SendActivity_sRKMUq()}"
+        },
+        {
+          "$kind": "Microsoft.IfCondition",
+          "$designer": {
+            "id": "51bBIO"
+          },
+          "condition": "=turn.recognized.text == \"no\"",
+          "elseActions": [],
+          "actions": [
+            {
+              "$kind": "Microsoft.BeginDialog",
+              "$designer": {
+                "id": "uSQkia"
+              },
+              "activityProcessed": true,
+              "dialog": "agraaaa"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "generator": "Despedida.lg",
+  "recognizer": "Despedida.lu.qna",
+  "id": "Despedida"
+}

@@ -1,0 +1,10 @@
+[import](common.lg)
+
+# SendActivity_sRKMUq()
+[Activity
+    Text = ${SendActivity_sRKMUq_text()}
+    SuggestedActions = si  | no
+]
+
+# SendActivity_sRKMUq_text()
+- ¿Desea algo mas?

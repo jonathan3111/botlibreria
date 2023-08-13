@@ -57,7 +57,9 @@
                 }
               ]
             }
-          ]
+          ],
+          "value": "dialog.foreach.value",
+          "index": "dialog.foreach.index"
         }
       ]
     },
@@ -92,6 +94,14 @@
           },
           "activityProcessed": true,
           "dialog": "respuestas"
+        },
+        {
+          "$kind": "Microsoft.BeginDialog",
+          "$designer": {
+            "id": "VbRuWG"
+          },
+          "activityProcessed": true,
+          "dialog": "Despedida"
         }
       ]
     },
@@ -110,6 +120,14 @@
           },
           "activityProcessed": true,
           "dialog": "respuesta2"
+        },
+        {
+          "$kind": "Microsoft.BeginDialog",
+          "$designer": {
+            "id": "BRfNmL"
+          },
+          "activityProcessed": true,
+          "dialog": "Despedida"
         }
       ]
     },
@@ -128,6 +146,14 @@
           },
           "activityProcessed": true,
           "dialog": "respuesta3"
+        },
+        {
+          "$kind": "Microsoft.BeginDialog",
+          "$designer": {
+            "id": "XlFCbl"
+          },
+          "activityProcessed": true,
+          "dialog": "Despedida"
         }
       ]
     },
@@ -146,6 +172,14 @@
           },
           "activityProcessed": true,
           "dialog": "respuesta4"
+        },
+        {
+          "$kind": "Microsoft.BeginDialog",
+          "$designer": {
+            "id": "t1b3jh"
+          },
+          "activityProcessed": true,
+          "dialog": "Despedida"
         }
       ]
     },
@@ -164,6 +198,96 @@
           },
           "activityProcessed": true,
           "dialog": "respuesta5"
+        },
+        {
+          "$kind": "Microsoft.BeginDialog",
+          "$designer": {
+            "id": "05zqZI"
+          },
+          "activityProcessed": true,
+          "dialog": "Despedida"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "jXPYLJ",
+        "name": "Despedida"
+      },
+      "intent": "Despedida",
+      "actions": [
+        {
+          "$kind": "Microsoft.BeginDialog",
+          "$designer": {
+            "id": "UvHz5Q"
+          },
+          "activityProcessed": true,
+          "dialog": "agraaaa",
+          "options": {}
+        }
+      ],
+      "entities": []
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "NQXqhW",
+        "name": "Desp"
+      },
+      "intent": "Desp",
+      "actions": [
+        {
+          "$kind": "Microsoft.BeginDialog",
+          "$designer": {
+            "id": "7DSPmL"
+          },
+          "activityProcessed": true,
+          "dialog": "agraaaa"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "nAYL2h",
+        "name": "despedida2"
+      },
+      "intent": "despedida2"
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "d5Yg4w",
+        "name": "respuesta6"
+      },
+      "intent": "respuesta6",
+      "actions": [
+        {
+          "$kind": "Microsoft.BeginDialog",
+          "$designer": {
+            "id": "w0DbpU"
+          },
+          "activityProcessed": true,
+          "dialog": "agraaaa"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "iHcxGn",
+        "name": "respuesta7"
+      },
+      "intent": "respuesta7",
+      "actions": [
+        {
+          "$kind": "Microsoft.BeginDialog",
+          "$designer": {
+            "id": "OPyu6r"
+          },
+          "activityProcessed": true,
+          "dialog": "respussss"
         }
       ]
     }
@@ -192,6 +316,26 @@
       {
         "intent": "Regla",
         "pattern": "regla"
+      },
+      {
+        "intent": "Despedida",
+        "pattern": "hasta luego"
+      },
+      {
+        "intent": "Desp",
+        "pattern": "adios"
+      },
+      {
+        "intent": "despedida2",
+        "pattern": "nos vemos"
+      },
+      {
+        "intent": "respuesta6",
+        "pattern": "no"
+      },
+      {
+        "intent": "respuesta7",
+        "pattern": "si"
       }
     ]
   }
