@@ -13,7 +13,7 @@
 ]
 
 # SendActivity_CHA4Vf_text()
-- No tenemos aun ese producto
+- No tenemos aun ese producto, disculpe
 # SendActivity_UuPCYV()
 [Activity
     Text = ${SendActivity_UuPCYV_text()}
